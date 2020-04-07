@@ -5,11 +5,7 @@
 
 .main-box{
     position:absolute;
-<<<<<<< HEAD
     background-image:linear-gradient(to bottom, rgba(170, 13, 243, 00.50), rgba(65, 0, 243, 0.85)), url("/img/safar-safarov.jpg");
-=======
-    background-image:linear-gradient(to bottom, rgba(170, 13, 243, 00.50), rgba(65, 0, 243, 0.85)), url("KanchanCS.github.io/safar-safarov.jpg");
->>>>>>> 614f6f945f6461d7201c733635edb9a59cfe0eb5
     background-size: cover;
     background-position:center center;
     width:100vw;
@@ -42,9 +38,4 @@ p{
     color:#fff;
     font-size: 18px;
     text-transform: uppercase;
-<<<<<<< HEAD
 }
-=======
-}333
-}
->>>>>>> 614f6f945f6461d7201c733635edb9a59cfe0eb5
