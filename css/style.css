@@ -5,7 +5,7 @@
 
 .main-box{
     position:absolute;
-    background-image:linear-gradient(to bottom, rgba(170, 13, 243, 00.50), rgba(65, 0, 243, 0.85)), url("/safar-safarov.jpg");
+    background-image:linear-gradient(to bottom, rgba(170, 13, 243, 00.50), rgba(65, 0, 243, 0.85)), url("safar-safarov.jpg");
     background-size: cover;
     background-position:center center;
     width:100vw;
