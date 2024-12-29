@@ -1,255 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="shortcut icon" href="assets/img/perfil.ico" type="image/x-icon">
+<body>
+    <header class="header">
+        <a href="#home" class="logo"><span>K</span>anchan</a>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
 
-        <title>Kanchan Yadav</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Kanchan yadav</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>It's Kanchan</h1>
+            <h3>I'm a <span>Web Developer</span></h3>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/posts/vaibhav0524_html-notes-activity-7057932900696039424-GGOq"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/KanchanCS"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="" class="btn" onclick="window.open('img/kanchan_FullStack_developer.pdf')"> Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/perfil.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="row">
+                <div class="about-img">
+                    <img src="img/perfil.jpg" alt="">
                 </div>
+                <div class="about-content">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Kanchan</span><br> Data Analytics </h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/kanchan-yadav-a906941b8/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/KanchanCS" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-                <div class="home__img">    
-                    <img src="assets/img/perfil.jpg" alt="" style="border-radius: 5%; box-shadow: 2px 2px 4px #ff5e0073;" >
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.jpg" alt="" style="border-radius: 5%; box-shadow: 2px 2px 4px #ff5e0073;" >
+                    <h3>Web <span>Developer</span></h3>
+                    <p>Hello, I'm Kanchan. I completed my graduation in 2022 Looking 
+                        <br> for better opportunity as a Python FullStack Developer. 
+                        <br> B.tech, CSE with relevant experience in python developer using python 
+                        <br> technologies with MySQL database. Knowledge in Django framework 
+                        <br>in working with Django frameworks, MySQL, and frontend tools 
+                        <br> like HTML5, CSS3, JavaScript, Bootstrap. Relevant Links
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Kanchan</h2>
-                        <p class="about__text">Hello, I'm Kanchan. I completed my graduation in 2022 and I'm an aspiring Power BI professional. As a recent graduate, I possess a strong curiosity to learn and explore new technologies. I have undergone comprehensive training in Power BI from a reputable platform and have actively engaged in creating projects to enhance my skills and gain practical experience.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-layout skills__icon'></i>
-                                <span class="skills__name">Power BI</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-layout skills__icon'></i>
-                                <span class="skills__name">Excel</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-layout skills__icon'></i>
-                                <span class="skills__name">MySql</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-terminal skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-layout skills__icon'></i>
-                                <span class="skills__name">Python Django</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <h4>Frontend Desgin:-</h4>HTML, CSS, BootStrap, JavaScript
+                            </li>
+                            <li>
+                                <h4>Backend Desgin:-</h4>Python, Django
+                            </li>
+                            <li>
+                                <h4>Database:-</h4>MySQL, MongoDB
+                            </li>
+                            <li>
+                                <h4>Version Control:-</h4>Git, GitHub
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <h4>Aug 2024 - Present</h4><br>FullStack Training Seven Mentor Pvt. Ltd, Pune
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <h4>B.Tech - Computer Science</h4><br>Dr. A.P.J. Abdul Kalam Technical University,
+                                2022
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
 
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <a href="https://KanchanCS.github.io/portfolio/index.html">
-                            <img src="assets/img/ruckten.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/case-study.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/Sales-dashboard.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>
+        <!-- <a href="" class="btn">Read More</a> -->
+    </section>
+    <section class="project" id="project">
+        <h2 class="heading">Projects</h2>
+        <div class="project-list">
+            <div class="work">
+                <img src="img/project/hq720.jpg" alt="">
+                <div class="layer">
+                    <h3>E-Commerce Flower Shop</h3>
+                    <p>This HTML & CSS file outlines the structure for a responsive flower shop website. It includes the following sections</p>
+                    <a href="https://github.com/KanchanCS/E-commerce-Flower-Shop"><i class="fab fa-github"></i></a>
                 </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                   <form action="https://getform.io/f/0329a52d-54ab-4258-ba95-b25f3bdf21d2" method="POST"class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input" name="name" required>
-                        <input type="mail" placeholder="Email" class="contact__input" name="email" required>
-                        <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <button class="contact__button button" type="submit">Send</button>
+            </div>
+            <div class="work">
+                <img src="img/project/project2.jpg" alt="">
+                <div class="layer">
+                    <h3>Restaurant Managment</h3>
+                    <p>This is a full-featured Django-based web application built for Madu Restaurant, featuring an elegant and responsive design.</p>
+                    <a href="https://github.com/KanchanCS/restaurant_managment"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/project/project2.jpg" alt="">
+                <div class="layer">
+                    <h3>Restaurant Managment</h3>
+                    <p>This is a full-featured Django-based web application built for Madu Restaurant, featuring an elegant and responsive design.</p>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+          
+            
+        </div>
+        <a href="" class="btn-1">See more</a>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <form method="POST" id="form">
+                        <div id="res" style="color: green;font-size: 20px;"></div>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn-2" type="submit" name="submit">Submit</button>
                     </form>
                 </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Kanchan</p>
-             <div class="footer__social">
-                 <a href="assets/Kanchan_Data_Analytics.docx" class="button" download>Resume</a>
             </div>
-            <p>&#169; 2020 copyright all right reserved</p>
-        </footer>
+        </div>
 
+    </section>
+    <div class="copyright">
+        <p>&copy Copyright by 2025 <i class="fas fa-heart"></i> Created by Kanchan yadav </p>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-        <!--===== SCROLL REVEAL =====-->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197776078-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-197776078-1');
-</script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
